@@ -4,8 +4,10 @@ using TheTinker.TheTinkerCode.Extensions;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
+using TheTinker.TheTinkerCode.Relics;
 
 namespace TheTinker.TheTinkerCode.Character;
 
@@ -35,9 +37,11 @@ public class TheTinker : PlaceholderCharacterModel
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
-        ModelDb.Relic<BurningBlood>()
+        ModelDb.Relic<Scrapper>()
     ];
     
+    //Need to change this in the future to his own card pool
+    //Lol by changing that we broke the entire game on accident
     public override CardPoolModel CardPool => ModelDb.CardPool<TheTinkerCardPool>();
     public override RelicPoolModel RelicPool => ModelDb.RelicPool<TheTinkerRelicPool>();
     public override PotionPoolModel PotionPool => ModelDb.PotionPool<TheTinkerPotionPool>();

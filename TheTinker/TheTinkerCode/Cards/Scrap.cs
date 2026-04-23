@@ -6,13 +6,13 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.CardPools;
 using TheTinker.TheTinkerCode.Character;
 
 namespace TheTinker.TheTinkerCode.Cards;
 
-//We need to remove this fromk the card 
 [Pool(typeof(TheTinkerCardPool))]
-public class Scrap() : CustomCardModel(0, CardType.Status, CardRarity.Token, TargetType.None)
+public class Scrap() : CustomCardModel(0, CardType.Skill, CardRarity.Token, TargetType.None)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1)];
 
