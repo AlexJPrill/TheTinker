@@ -11,7 +11,7 @@ using TheTinker.TheTinkerCode.Character;
 
 namespace TheTinker.TheTinkerCode.Cards;
 
-[Pool(typeof(TheTinkerCardPool))]
+[Pool(typeof(TokenCardPool))]
 public class Scrap() : CustomCardModel(0, CardType.Skill, CardRarity.Token, TargetType.None)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1)];

@@ -41,7 +41,8 @@ public class TheTinker : PlaceholderCharacterModel
     ];
     
     //Need to change this in the future to his own card pool
-    //Lol by changing that we broke the entire game on accident
+    //Lol by changing that we broke the entire game on accident. This did lead to the funiest error message that I  have ever gotten.
+    //I am going to want to add some dummy cards potentialy for testing puposes only so that I can atleast test the game somewhat.
     public override CardPoolModel CardPool => ModelDb.CardPool<TheTinkerCardPool>();
     public override RelicPoolModel RelicPool => ModelDb.RelicPool<TheTinkerRelicPool>();
     public override PotionPoolModel PotionPool => ModelDb.PotionPool<TheTinkerPotionPool>();
