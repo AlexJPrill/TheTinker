@@ -60,7 +60,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="TheTinker\images\card_portraits\big\"/>
         <Folder Include="TheTinker\images\powers\big\"/>
         <Folder Include="TheTinker\images\relics\big\"/>
     </ItemGroup>

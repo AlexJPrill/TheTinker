@@ -1,8 +1,18 @@
 {
-  "THETINKER-SCRAP.description": "Draw 1",
+  "THETINKER-STRIKE_THE_TINKER.title": "Strike",
+  "THETINKER-STRIKE_THE_TINKER.description": "Deal {Damage:diff()} damage.",
+  
+  "THETINKER-DEFEND_THE_TINKER.title": "Defend",
+  "THETINKER-DEFEND_THE_TINKER.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  
+  "THETINKER-SCRAP.description": "Draw 1 card.{IfUpgraded:show:\n[gold]Exhaust[/gold] draw 1 card.|}",
   "THETINKER-SCRAP.title": "Scrap",
   
   
-  "THETINKER-BATTLE_TOOLS.description": "Do something",
-  "THETINKER-BATTLE_TOOLS.title": "Battle Tools"
+  "THETINKER-BATTLE_TOOLS.description": "Exhaust a card in you hand containing \"scrap\" and, if you do, add a {IfUpgraded:show:Combat Rig+|Combat Rig} to your [gold]Hand[/gold].",
+  "THETINKER-BATTLE_TOOLS.title": "Battle Tools",
+  
+  
+  "THETINKER-COMBAT_RIG.description": "[gold]Worn[/gold].\nDeal {Damage:diff()} damage.\nGain {Block:diff()} block.",
+  "THETINKER-COMBAT_RIG.title": "Combat Rig"
 }

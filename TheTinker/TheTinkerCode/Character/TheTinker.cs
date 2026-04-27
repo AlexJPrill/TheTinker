@@ -1,4 +1,5 @@
-﻿using BaseLib.Abstracts;
+﻿using System.Collections.Generic;
+using BaseLib.Abstracts;
 using BaseLib.Utils.NodeFactories;
 using TheTinker.TheTinkerCode.Extensions;
 using Godot;
@@ -7,6 +8,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
+using TheTinker.TheTinkerCode.Cards;
 using TheTinker.TheTinkerCode.Relics;
 
 namespace TheTinker.TheTinkerCode.Character;
@@ -16,23 +18,24 @@ public class TheTinker : PlaceholderCharacterModel
 {
     public const string CharacterId = "TheTinker";
     
-    public static readonly Color Color = new("ffffff");
+    public static readonly Color Color = new("C2A369");
 
     public override Color NameColor => Color;
     public override CharacterGender Gender => CharacterGender.Neutral;
     public override int StartingHp => 70;
     
     public override IEnumerable<CardModel> StartingDeck => [
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>()
+        ModelDb.Card<StrikeTheTinker>(),
+        ModelDb.Card<StrikeTheTinker>(),
+        ModelDb.Card<StrikeTheTinker>(),
+        ModelDb.Card<StrikeTheTinker>(),
+        ModelDb.Card<DefendTheTinker>(),
+        ModelDb.Card<DefendTheTinker>(),
+        ModelDb.Card<DefendTheTinker>(),
+        ModelDb.Card<DefendTheTinker>(),
+        ModelDb.Card<CombatRig>(),
+        ModelDb.Card<BattleTools>()
+        
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
